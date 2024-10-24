@@ -8,19 +8,34 @@ import Card from "../components/Card.astro";
 <!-- profile2.webp you can remove | Photo <a href="https://unsplash.com/es/@charlesdeluvio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">charlesdeluvio</a> en <a href="https://unsplash.com/es/fotos/hombre-con-gorro-negro-kVg2DQTAK7c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
    -->
 
-<!-- You can replace the card's data with your own here. -->
-<BaseLayout title="Personal Card Portfolio Astro" description="Meta description. Here goes your page description. Provide a clear and concise summary of the content.">
-<Card
-  name="Elyas Moukhli"
-  position="Student"
-  aboutMe="Hi there! Ich bin Elyas, ein Student, der sich auf Web-Programmierung spezialisiert hat."
-  linkedin="https://www.linkedin.com/in/dein-profil"
-  github="https://github.com/dein-benutzername"
-  cvLink="/files/dein-lebenslauf.pdf"
-  profileImage="/images/dein-bild.jpg"
-/>
-</BaseLayout>
+---
+title = "Meine Vorlesung Website"
+---
 
-<!--
-	"Hi ich bin Elyas "
- -->
+<BaseLayout title={title} description="Willkommen auf meiner Web-Portfolio-Seite">
+
+  <section>
+    <h1>Willkommen zu meiner Website</h1>
+    <p>Dies ist eine Portfolio-Seite, die meine Projekte und Vorlesungen präsentiert.</p>
+  </section>
+
+  <section>
+    <h2>Projekte</h2>
+    <Card
+      name="Projekt 1"
+      description="Beschreibung von Projekt 1."
+      github="https://github.com/dein-github/projekt-1"
+    />
+    <Card
+      name="Projekt 2"
+      description="Beschreibung von Projekt 2."
+      github="https://github.com/dein-github/projekt-2"
+    />
+  </section>
+
+  <section>
+    <h2>Vorlesungen</h2>
+    <p>Zusammenfassungen und wichtige Infos zu meinen Vorlesungen findest du hier.</p>
+  </section>
+
+</BaseLayout>
